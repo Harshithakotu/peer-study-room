@@ -1,0 +1,204 @@
+.wrapper {
+  bottom: 1.5rem;
+  position: fixed;
+  right: 1.5rem;
+  z-index: 100;
+}
+
+.floatBtn {
+  align-items: center;
+  background: #1a1a24;
+  border: 1px solid #3a3a50;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  cursor: pointer;
+  display: flex;
+  font-size: 1.3rem;
+  height: 52px;
+  justify-content: center;
+  position: relative;
+  transition: border-color 0.2s, transform 0.15s;
+  width: 52px;
+}
+
+.floatBtn:hover {
+  border-color: #6c63ff;
+  transform: scale(1.08);
+}
+
+.floatBtnPlaying {
+  border-color: #4ecdc4;
+}
+
+.playingDot {
+  animation: pulse 1.5s ease-in-out infinite;
+  background: #4ecdc4;
+  border-radius: 50%;
+  bottom: 6px;
+  height: 8px;
+  position: absolute;
+  right: 6px;
+  width: 8px;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.3); }
+}
+
+.panel {
+  background: #1a1a24;
+  border: 1px solid #2a2a3a;
+  border-radius: 14px;
+  bottom: 64px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  width: 260px;
+}
+
+.panelHeader {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.875rem;
+}
+
+.panelTitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0;
+  transition: color 0.15s;
+}
+
+.closeBtn:hover {
+  color: #e8e8f0;
+}
+
+.nowPlaying {
+  align-items: center;
+  background: #0f0f13;
+  border: 1px solid #2a2a3a;
+  border-radius: 10px;
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  padding: 0.7rem;
+}
+
+.stationEmoji {
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+.stationName {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.statusText {
+  color: #666;
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+
+.playBtn {
+  align-items: center;
+  background: #6c63ff;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  height: 32px;
+  justify-content: center;
+  margin-left: auto;
+  transition: background 0.2s;
+  width: 32px;
+}
+
+.pauseBtn {
+  background: #4ecdc4;
+}
+
+.playBtn:hover {
+  opacity: 0.85;
+}
+
+.stations {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.stationBtn {
+  align-items: center;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #888;
+  display: flex;
+  font-size: 0.85rem;
+  gap: 0.5rem;
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+  transition: all 0.15s;
+  width: 100%;
+}
+
+.stationBtn:hover {
+  background: #0f0f13;
+  border-color: #2a2a3a;
+  color: #e8e8f0;
+}
+
+.activeStation {
+  background: #0f0f13;
+  border-color: #6c63ff;
+  color: #e8e8f0;
+}
+
+.activeDot {
+  background: #4ecdc4;
+  border-radius: 50%;
+  height: 6px;
+  margin-left: auto;
+  width: 6px;
+}
+
+.volumeRow {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.volIcon {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+.volumeSlider {
+  accent-color: #6c63ff;
+  flex: 1;
+}
+
+.volNum {
+  color: #666;
+  font-size: 0.75rem;
+  min-width: 30px;
+  text-align: right;
+}

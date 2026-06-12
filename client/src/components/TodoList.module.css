@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #aaa;
+}
+
+.count {
+  color: #6c63ff;
+  font-size: 0.8rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.input {
+  background: #0f0f13;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  color: #e8e8f0;
+  flex: 1;
+  font-size: 0.9rem;
+  padding: 0.6rem 0.75rem;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+.addBtn {
+  background: #6c63ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+  height: 38px;
+  width: 38px;
+  transition: background 0.2s;
+}
+
+.addBtn:hover {
+  background: #5a52e0;
+}
+
+.list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+}
+
+.item {
+  align-items: center;
+  background: #0f0f13;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.6rem 0.75rem;
+  transition: opacity 0.2s;
+}
+
+.done {
+  opacity: 0.5;
+}
+
+.checkbox {
+  align-items: center;
+  background: #1a1a24;
+  border: 1px solid #3a3a50;
+  border-radius: 4px;
+  color: #6c63ff;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  height: 20px;
+  justify-content: center;
+  transition: all 0.15s;
+  width: 20px;
+}
+
+.checkbox:hover {
+  border-color: #6c63ff;
+}
+
+.todoText {
+  flex: 1;
+  font-size: 0.9rem;
+  text-decoration: inherit;
+  word-break: break-word;
+}
+
+.done .todoText {
+  text-decoration: line-through;
+}
+
+.createdBy {
+  color: #555;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #555;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0 0.1rem;
+  transition: color 0.2s;
+}
+
+.deleteBtn:hover {
+  color: #ff6b6b;
+}
+
+.empty {
+  color: #555;
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+  text-align: center;
+}

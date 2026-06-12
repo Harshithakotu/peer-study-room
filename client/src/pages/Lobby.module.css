@@ -1,0 +1,257 @@
+.page {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #2a2a3a;
+}
+
+.headerLogo {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.username {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.logoutBtn {
+  background: transparent;
+  border: 1px solid #3a3a50;
+  border-radius: 8px;
+  color: #aaa;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.9rem;
+  transition: all 0.2s;
+}
+
+.logoutBtn:hover {
+  border-color: #6c63ff;
+  color: #e8e8f0;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: #888;
+}
+
+.statsRow {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.statNum {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #6c63ff;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.card {
+  background: #1a1a24;
+  border: 1px solid #2a2a3a;
+  border-radius: 16px;
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 1.5rem;
+  width: calc(100% - 2rem);
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  background: transparent;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  color: #888;
+  flex: 1;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  border-color: #6c63ff;
+  color: #e8e8f0;
+}
+
+.activeTab {
+  background: #6c63ff;
+  border-color: #6c63ff;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.label {
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-bottom: -0.25rem;
+}
+
+.input {
+  background: #0f0f13;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  color: #e8e8f0;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.halfField {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.checkboxLabel {
+  align-items: center;
+  color: #aaa;
+  display: flex;
+  font-size: 0.9rem;
+  gap: 0.5rem;
+}
+
+.btn {
+  background: #6c63ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  transition: background 0.2s;
+}
+
+.btn:hover:not(:disabled) {
+  background: #5a52e0;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+}
+
+.roomList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.roomCard {
+  align-items: center;
+  background: #0f0f13;
+  border: 1px solid #2a2a3a;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9rem 1rem;
+  transition: border-color 0.2s;
+}
+
+.roomCard:hover {
+  border-color: #6c63ff;
+}
+
+.roomInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.roomName {
+  font-weight: 500;
+}
+
+.roomHost {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.roomMeta {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  gap: 0.2rem;
+  color: #888;
+}
+
+.roomCode {
+  background: #1a1a24;
+  border-radius: 4px;
+  font-family: monospace;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.5rem;
+}
+
+.empty {
+  color: #666;
+  padding: 1rem;
+  text-align: center;
+}
+
+.error {
+  background: #2a1a1a;
+  border: 1px solid #5a2a2a;
+  border-radius: 8px;
+  color: #ff6b6b;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}

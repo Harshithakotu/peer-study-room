@@ -1,0 +1,95 @@
+.container {
+  background: #1a1a24;
+  border-bottom: 1px solid #2a2a3a;
+  padding: 0.75rem 1.25rem;
+}
+
+.top {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.roomInfo {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.roomLabel {
+  color: #666;
+  font-size: 0.75rem;
+}
+
+.roomCode {
+  background: #0f0f13;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 0.2rem 0.6rem;
+}
+
+.copyBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+  transition: transform 0.1s;
+}
+
+.copyBtn:hover {
+  transform: scale(1.2);
+}
+
+.hostBadge {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.usersSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  color: #666;
+  font-size: 0.75rem;
+}
+
+.avatarRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.userChip {
+  align-items: center;
+  background: #0f0f13;
+  border-radius: 20px;
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.2rem;
+}
+
+.avatar {
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: 700;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+
+.userName {
+  color: #ccc;
+  font-size: 0.8rem;
+}

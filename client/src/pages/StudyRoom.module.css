@@ -1,0 +1,118 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.topBar {
+  align-items: center;
+  border-bottom: 1px solid #2a2a3a;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  padding: 0.6rem 1.25rem;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0;
+  transition: color 0.2s;
+}
+.backBtn:hover { color: #e8e8f0; }
+
+.roomName { font-size: 0.95rem; font-weight: 500; color: #e8e8f0; }
+
+.notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  pointer-events: none;
+  position: absolute;
+  right: 1rem;
+  top: 5rem;
+  z-index: 50;
+}
+
+.notif {
+  animation: fadeIn 0.3s ease;
+  background: #1a1a24;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  padding: 0.4rem 0.9rem;
+  white-space: nowrap;
+  color: #ccc;
+}
+
+.success { border-color: #4ecdc4; color: #4ecdc4; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Three-column layout */
+.main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.timerPanel {
+  align-items: center;
+  border-right: 1px solid #2a2a3a;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: 1rem;
+  width: 300px;
+}
+
+.syncNote {
+  color: #555;
+  font-size: 0.78rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.todoPanel {
+  border-right: 1px solid #2a2a3a;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  padding: 1.25rem;
+}
+
+.chatPanel {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 0.75rem;
+  width: 300px;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  color: #e8e8f0;
+}
+
+@media (max-width: 768px) {
+  .main { flex-direction: column; overflow-y: auto; }
+  .timerPanel { border-right: none; border-bottom: 1px solid #2a2a3a; flex-shrink: 0; width: 100%; }
+  .todoPanel  { border-right: none; border-bottom: 1px solid #2a2a3a; flex: none; height: 340px; }
+  .chatPanel  { border-right: none; flex: 1; height: 380px; width: 100%; }
+}

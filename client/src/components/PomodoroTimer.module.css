@@ -1,0 +1,84 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+}
+
+.phaseLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.ring {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timerDisplay {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+}
+
+.time {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+}
+
+.pomodoros {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.startBtn,
+.pauseBtn,
+.resetBtn {
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.startBtn,
+.pauseBtn {
+  color: white;
+}
+
+.pauseBtn {
+  background: #e8a838;
+}
+
+.resetBtn {
+  background: #2a2a3a;
+  color: #aaa;
+}
+
+.startBtn:hover,
+.pauseBtn:hover,
+.resetBtn:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
+
+.guestNote {
+  color: #555;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
